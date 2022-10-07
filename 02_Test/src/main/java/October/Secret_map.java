@@ -1,6 +1,12 @@
 package October;
 
 public class Secret_map {
+	public static void main(String[] args) {
+		int[] arr1 = {9, 20, 28, 18, 11};
+		int[] arr2 = {30, 1, 21, 17, 28};
+		solution(5, arr1, arr2);
+	}
+	
     public static String[] solution(int n, int[] arr1, int[] arr2) {
         String[] answer = new String[n];
         	
@@ -13,8 +19,8 @@ public class Secret_map {
 	        	answer[i] = answer[i].replaceAll("0", " ");
 	        	
 	        	answer[i] = answer[i];
+	        	System.out.println(answer[i]);
 	        }
-        
         return answer;
     }
 }
